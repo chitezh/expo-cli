@@ -55,7 +55,7 @@ export const withIosExpoPlugins: ConfigPlugin<{
     IOSConfig.Version.withBuildNumber,
     IOSConfig.Version.withVersion,
     IOSConfig.Google.withGoogleServicesFile,
-    IOSConfig.JsEngine.withJsEnginePodfileProps,
+    IOSConfig.BuildProperties.withBuildPodfileProps,
     // Entitlements
     IOSConfig.Entitlements.withAssociatedDomains,
     // XcodeProject
@@ -80,7 +80,7 @@ export const withAndroidExpoPlugins: ConfigPlugin<{
 
   return withPlugins(config, [
     // gradle.properties
-    AndroidConfig.JsEngine.withJsEngineGradleProps,
+    AndroidConfig.BuildProperties.withBuildGradleProps,
 
     // settings.gradle
     AndroidConfig.Name.withNameSettingsGradle,
